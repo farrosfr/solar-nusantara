@@ -19,52 +19,28 @@ const serviceItems = [
 ];
 ---
 
-<section class="container mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Layanan Kami</h2>
-  <div class="relative">
-    <div class="flex overflow-x-auto snap-x snap-mandatory space-x-4 pb-4" id="service-carousel">
-      {serviceItems.map(item => (
-        <div class="flex-shrink-0 w-80 snap-center bg-white rounded-lg shadow-md p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-4">{item.title}</h3>
-          <p class="text-gray-700 text-base mb-6">{item.description}</p>
-          <a href={item.link} class="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
-            selengkapnya
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-      ))}
-    </div>
-    <button id="prev-service" class="absolute top-1/2 left-0 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-opacity">
-      &#10094;
-    </button>
-    <button id="next-service" class="absolute top-1/2 right-0 -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-opacity">
-      &#10095;
-    </button>
+<section class="bg-white dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="max-w-screen-md mb-8 lg:mb-16">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Layanan Kami</h2>
+          <p class="text-gray-500 sm:text-xl dark:text-gray-400">Kami menawarkan solusi energi terbarukan yang komprehensif untuk memenuhi kebutuhan bisnis Anda.</p>
+      </div>
+      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+          {serviceItems.map(item => (
+            <div>
+                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a1 1 0 001 1h12a1 1 0 001-1V5a1 1 0 000-2H3zm3 2a1 1 0 011-1h2a1 1 0 110 2H7a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1 0 110 2H7a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1- 0 110 2H7a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">{item.title}</h3>
+                <p class="text-gray-500 dark:text-gray-400">{item.description}</p>
+                <a href={item.link} class="text-blue-600 hover:text-blue-800 font-semibold flex items-center mt-4">
+                  selengkapnya
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+            </div>
+          ))}
+      </div>
   </div>
 </section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.getElementById('service-carousel');
-    const prevButton = document.getElementById('prev-service');
-    const nextButton = document.getElementById('next-service');
-
-    if (carousel && prevButton && nextButton) {
-      prevButton.addEventListener('click', () => {
-        carousel.scrollBy({
-          left: -carousel.offsetWidth,
-          behavior: 'smooth'
-        });
-      });
-
-      nextButton.addEventListener('click', () => {
-        carousel.scrollBy({
-          left: carousel.offsetWidth,
-          behavior: 'smooth'
-        });
-      });
-    }
-  });
-</script>

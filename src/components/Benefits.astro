@@ -2,98 +2,50 @@
 // src/components/Benefits.astro
 ---
 
-<section class="container mx-auto px-4 py-16">
-  <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-12">
-    <h2 class="text-3xl font-bold text-gray-800 mb-4 lg:mb-0">Solar Nusantara</h2>
-    <h3 class="text-2xl font-semibold text-gray-700">Mari kita bicarakan tentang manfaatnya.</h3>
-  </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="space-y-8">
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 text-blue-600">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011-1v-1z" />
-          </svg>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold text-gray-800 mb-2">Membantu Lingkungan</h4>
-          <p class="text-gray-700">Solar Nusantara membantu lingkungan dengan mempromosikan penggunaan sumber energi bersih dan berkelanjutan, mengurangi dampak negatif dari bahan bakar fosil, serta berkontribusi pada masa depan yang lebih berkelanjutan.</p>
-        </div>
-      </div>
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 text-blue-600">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
-          </svg>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold text-gray-800 mb-2">Lebih Menghemat Uang Anda</h4>
-          <p class="text-gray-700">Solar Nusantara menawarkan produk dan layanan energi terbarukan yang hemat biaya, serta membantu konsumen memanfaatkan tren menuju sumber energi yang lebih terjangkau dan berkelanjutan.</p>
-        </div>
-      </div>
+<section class="bg-white dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="max-w-screen-md mb-8 lg:mb-16">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Mari kita bicarakan tentang manfaatnya.</h2>
+      <p class="text-gray-500 sm:text-xl dark:text-gray-400">Solar Nusantara memberikan berbagai manfaat, mulai dari penghematan biaya hingga kontribusi positif bagi lingkungan.</p>
     </div>
-
-    <div class="space-y-8">
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 text-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+    <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011-1v-1z" clip-rule="evenodd"></path></svg>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold text-gray-800 mb-2">Ketahanan Lingkungan</h4>
-        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Membantu Lingkungan</h3>
+        <p class="text-gray-500 dark:text-gray-400">Solar Nusantara membantu lingkungan dengan mempromosikan penggunaan sumber energi bersih dan berkelanjutan, mengurangi dampak negatif dari bahan bakar fosil, serta berkontribusi pada masa depan yang lebih berkelanjutan.</p>
       </div>
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 text-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold text-gray-800 mb-2">Efektivitas Biaya</h4>
-        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Lebih Menghemat Uang Anda</h3>
+        <p class="text-gray-500 dark:text-gray-400">Solar Nusantara menawarkan produk dan layanan energi terbarukan yang hemat biaya, serta membantu konsumen memanfaatkan tren menuju sumber energi yang lebih terjangkau dan berkelanjutan.</p>
       </div>
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 text-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7"></path></svg>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold text-gray-800 mb-2">Kenyamanan</h4>
-        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Ketahanan Lingkungan</h3>
       </div>
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 text-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7"></path></svg>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold text-gray-800 mb-2">Keandalan</h4>
-        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Efektivitas Biaya</h3>
       </div>
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 text-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7"></path></svg>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold text-gray-800 mb-2">Independesi Energi</h4>
-        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Kenyamanan</h3>
       </div>
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 text-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
+      <div>
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+            <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7"></path></svg>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold text-gray-800 mb-2">Dampak Positif</h4>
-        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Keandalan</h3>
       </div>
     </div>
   </div>

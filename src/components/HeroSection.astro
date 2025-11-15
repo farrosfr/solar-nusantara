@@ -1,0 +1,26 @@
+---
+// src/components/HeroSection.astro
+import { Image } from 'astro:assets';
+import heroImage from '../assets/slide1.jpg';
+---
+
+<section class="relative h-screen flex items-center justify-center text-white">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0">
+    <Image src={heroImage} alt="Solar panels on a roof" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/60"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+      Solar Nusantara
+    </h1>
+    <p class="text-lg md:text-2xl font-medium mb-8">
+      ENERGI BARU INDONESIA
+    </p>
+    <a href="/tentang" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-transform hover:scale-105 duration-300">
+      About Us
+    </a>
+  </div>
+</section>

@@ -1,5 +1,8 @@
 ---
 // src/components/Navbar.astro
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
+
 const navLinks = [
   { href: "/", text: "Beranda" },
   { href: "/tentang", text: "Tentang Kami" },
@@ -10,18 +13,31 @@ const navLinks = [
   { href: "/berita", text: "Berita" },
 ];
 ---
-<div class="hidden lg:block bg-white shadow-md">
-  <div class="container mx-auto px-4">
-    <nav class="flex justify-center items-center py-4">
-      <ul class="flex space-x-8">
-        {navLinks.map(link => (
-          <li>
-            <a href={link.href} class="text-gray-700 hover:text-blue-600 font-semibold transition-colors pb-2 border-b-2 border-transparent hover:border-blue-600">
-              {link.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+
+<nav class="hidden lg:flex w-full items-center justify-between bg-white/80 backdrop-blur-md h-20">
+  <div class="container mx-auto px-4 flex items-center justify-between">
+    <a href="/">
+      <Image src={logo} alt="Solar Nusantara Logo" width={150} />
+    </a>
+    <ul class="flex items-center space-x-6">
+      {navLinks.map(link => (
+        <li>
+          <a 
+            href={link.href} 
+            class="text-gray-700 font-medium hover:text-blue-600 transition-colors duration-300"
+          >
+            {link.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <a 
+      href="https://sonushub.id/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="bg-blue-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors duration-300"
+    >
+      SonusHUB
+    </a>
   </div>
-</div>
+</nav>
