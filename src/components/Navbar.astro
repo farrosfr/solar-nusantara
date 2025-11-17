@@ -2,7 +2,7 @@
 // src/components/Navbar.astro
 const navLinks = [
   { href: "/", text: "Beranda" },
-  { href: "/tentang", text: "Tentang Kami" },
+  { href: "/tentang", text: "Tentang" },
   { href: "/layanan", text: "Layanan" },
   { href: "/produk", text: "Produk" },
   { href: "/pintar", text: "Pintar" },
@@ -13,12 +13,12 @@ const navLinks = [
 
 <nav class="hidden lg:flex w-full items-center justify-center bg-white/80 backdrop-blur-md h-16 sticky top-0 z-40 shadow-sm">
   <div class="container mx-auto px-4 flex items-center justify-center">
-    <ul class="flex items-center space-x-8">
+    <ul class="flex items-center gap-6">
       {navLinks.map(link => (
-        <li class="relative group">
+        <li class="relative group w-20">
           <a 
             href={link.href} 
-            class="text-gray-700 font-medium transition-colors duration-300"
+            class="block w-full text-center text-gray-700 font-medium transition-colors duration-300 py-2"
           >
             {link.text}
           </a>
