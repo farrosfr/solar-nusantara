@@ -37,9 +37,9 @@
   document.addEventListener('DOMContentLoaded', () => {
     const statValues = document.querySelectorAll('.stat-value');
 
-    const animateValue = (element, start, end, duration) => {
-      let startTimestamp = null;
-      const step = (timestamp) => {
+    const animateValue = (element: Element, start: number, end: number, duration: number) => {
+      let startTimestamp: number | null = null;
+      const step = (timestamp: number | null) => {
         if (!startTimestamp) startTimestamp = timestamp;
         const progress = Math.min((timestamp - startTimestamp) / duration, 1);
         element.textContent = Math.floor(progress * (end - start) + start).toLocaleString();
