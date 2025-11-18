@@ -8,6 +8,7 @@ import ServiceHighlight from '../components/ServiceHighlight.astro';
 import VideoSection from '../components/VideoSection.astro';
 import FlipBoxGrid from '../components/FlipBoxGrid.astro';
 import ServiceCarousel from '../components/ServiceCarousel.astro';
+import ProductCarousel from '../components/ProductCarousel.astro';
 import energiTerbarukanIcon from '../assets/icons/energi-baru.svg?raw';
 import manajemenEnergiIcon from '../assets/icons/manajemen-energi.svg?raw';
 import biomassIcon from '../assets/icons/biomass.svg?raw';
@@ -29,6 +30,34 @@ const energiBiomassaStats = [
   { iconPath: biomassIcon, value: "476190", title: "Perkiraan Penghematan kWh" },
   { iconPath: biomassIcon, value: "442857", title: "Perkiraan Penghindaran CO₂" },
 ];
+
+const products = [
+  {
+    title: "Impor Panel",
+    description: "Sistem Panel Surya adalah solusi inovatif dan efektif untuk menghasilkan listrik dengan memanfaatkan energi matahari.",
+    url: "/produk"
+  },
+  {
+    title: "Panel TKDN",
+    description: "Panel surya semakin populer sebagai sumber energi alternatif, dan panel TKDN dari SONUS menawarkan solusi yang terjangkau.",
+    url: "/produk"
+  },
+  {
+    title: "SPKL",
+    description: "SPKL adalah salah satu inovasi dari Sonus di bidang kendaraan listrik untuk infrastruktur pengisian daya yang efisien.",
+    url: "/produk"
+  },
+  {
+    title: "Wood Pellet",
+    description: "Energi biomassa adalah sumber energi terbarukan yang dihasilkan dari bahan organik, seperti serbuk kayu dan limbah pertanian.",
+    url: "/produk"
+  },
+  {
+    title: "50100 FG Series",
+    description: "Sumber daya listrik yang andal untuk Anda yang sering beraktivitas di daerah terpencil atau hidup tanpa bergantung pada jaringan listrik.",
+    url: "/produk"
+  }
+];
 ---
 
 <Layout title="Solar Nusantara - Energi Baru Indonesia">
@@ -41,6 +70,7 @@ const energiBiomassaStats = [
 		<ServiceHighlight client:visible title="Energi Biomassa" stats={energiBiomassaStats} />
 		<Benefits />
 		<ServiceCarousel />
+		<ProductCarousel products={products} />
 		<VideoSection />
 		<FlipBoxGrid />
 	</main>

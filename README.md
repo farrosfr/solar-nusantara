@@ -31,10 +31,10 @@ Inside of your Astro project, you'll see the following folders and files:
 │   │   ├── NewsItem.astro
 │   │   ├── NewsSection.astro
 │   │   ├── ProductCarousel.astro
+│   │   ├── SearchBar.astro
 │   │   ├── ServiceCarousel.astro
 │   │   ├── ServiceHighlight.astro
 │   │   ├── StatItem.astro
-│   │   ├── StatsGrid.astro
 │   │   └── VideoSection.astro
 │   ├── layouts/
 │   │   └── Layout.astro
@@ -78,7 +78,7 @@ The reusable components are located in `src/components`:
 - `Navbar.astro`: The main navigation bar for desktop.
 - `NewsItem.astro`: A single news item card.
 - `NewsSection.astro`: A section displaying a list of news items.
-- `ProductCarousel.astro`: A carousel to display products.
+- `ProductCarousel.astro`: A section displaying a grid of products.
 - `SearchBar.astro`: A reusable search input component.
 - `ServiceCarousel.astro`: A carousel to display services.
 - `ServiceHighlight.astro`: A section to highlight specific services with stats.
