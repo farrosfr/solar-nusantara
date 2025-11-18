@@ -19,20 +19,20 @@ const serviceItems = [
 ];
 ---
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white">
   <div class="container mx-auto px-4 py-16">
       <div class="mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Layanan Kami</h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400">Kami menawarkan solusi energi terbarukan yang komprehensif untuk memenuhi kebutuhan bisnis Anda.</p>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Layanan Kami</h2>
+          <p class="text-gray-500 sm:text-xl">Kami menawarkan solusi energi terbarukan yang komprehensif untuk memenuhi kebutuhan bisnis Anda.</p>
       </div>
       <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           {serviceItems.map(item => (
             <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
                     <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a1 1 0 001 1h12a1 1 0 001-1V5a1 1 0 000-2H3zm3 2a1 1 0 011-1h2a1 1 0 110 2H7a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1 0 110 2H7a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1- 0 110 2H7a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                 </div>
-                <h3 class="mb-2 text-xl font-bold dark:text-white">{item.title}</h3>
-                <p class="text-gray-500 dark:text-gray-400">{item.description}</p>
+                <h3 class="mb-2 text-xl font-bold text-gray-900">{item.title}</h3>
+                <p class="text-gray-500">{item.description}</p>
                 <a href={item.link} class="text-blue-600 hover:text-blue-800 font-semibold flex items-center mt-4">
                   selengkapnya
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">

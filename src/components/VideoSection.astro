@@ -1,33 +1,15 @@
 ---
 // src/components/VideoSection.astro
-import { Image } from 'astro:assets';
-import videoThumbnail from '../assets/video-thumbnail.webp';
-
-const youtubeVideoId = "Yb47YXNETCE";
-const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1`;
 ---
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white">
     <div class="container mx-auto px-4 py-16">
         <div class="mx-auto text-center lg:mb-16 mb-8">
-            <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Tonton Video Kami</h2>
-            <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Lihat lebih dekat bagaimana Solar Nusantara dapat membantu bisnis Anda.</p>
+            <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900">Tonton Video Kami</h2>
+            <p class="font-light text-gray-500 sm:text-xl">Lihat lebih dekat bagaimana Solar Nusantara dapat membantu bisnis Anda.</p>
         </div>
         <div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-            <Image src={videoThumbnail} alt="Video Thumbnail" class="absolute inset-0 w-full h-full object-cover" />
-            <div class="absolute inset-0 flex items-center justify-center">
-                <a
-                    href={youtubeEmbedUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="bg-red-600 text-white p-4 rounded-full hover:bg-red-700 transition-colors"
-                    aria-label="Play Video"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                    </svg>
-                </a>
-            </div>
+            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/Yb47YXNETCE?si=27yocfegpVRspPyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </section>
