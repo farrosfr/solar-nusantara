@@ -113,7 +113,7 @@ const navLinks: NavLink[] = [
 
 ---
 
-<nav id="main-navbar" class="hidden lg:flex w-full items-center justify-center bg-white h-16 sticky top-0 z-40 shadow-sm transition-all duration-300 ease-in-out">
+<nav id="main-navbar" class="hidden lg:flex w-full items-center justify-center bg-white h-16 sticky top-0 z-40 shadow-sm">
   <div class="container mx-auto px-4 flex items-center justify-center">
     <ul class="flex items-center gap-6">
       {navLinks.map(link => (
@@ -129,7 +129,7 @@ const navLinks: NavLink[] = [
             )}
           </a>
           <span 
-            class="absolute -top-4 left-1/2 -translate-x-1/2 h-1 bg-blue-600 transition-all duration-300"
+            class="absolute -top-3 left-1/2 -translate-x-1/2 h-1 bg-blue-600 transition-all duration-300"
             class:list={{'w-full': (Astro.url.pathname.startsWith(link.href) && link.href !== '/') || (Astro.url.pathname === '/' && link.href === '/'), 'w-0 group-hover:w-full': !((Astro.url.pathname.startsWith(link.href) && link.href !== '/') || (Astro.url.pathname === '/' && link.href === '/'))}}
           ></span>
           
@@ -225,7 +225,7 @@ const navLinks: NavLink[] = [
   #main-navbar.navbar-scrolled {
     @apply rounded-full shadow-lg bg-white mx-auto; /* Removed mt-4 */
     width: 95%;
-    max-width: 1152px;
-    top: 1rem; /* Added this to set explicit top margin */
+    max-width: 1024px;
+    top: 0.5rem; /* Added this to set explicit top margin */
   }
 </style>
