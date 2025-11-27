@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Layout.astro
+layout: ../../../layouts/Layout.astro
 title: "Sistem Rumah Pintar"
 ---
 <div class="container mx-auto px-4 py-16">

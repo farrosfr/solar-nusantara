@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Layout.astro
+layout: ../../../layouts/Layout.astro
 title: "Segmen C & I"
 ---
 <div class="container mx-auto px-4 py-16">
