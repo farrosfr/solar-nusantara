@@ -13,14 +13,19 @@ interface Heading {
 
 interface Props {
   headings?: Heading[];
-  frontmatter: {
+  frontmatter?: {
     title: string;
-    // Potentially other frontmatter properties like `description`, `author`, etc.
   };
+  title?: string;
 }
 
-const { headings, frontmatter } = Astro.props;
-const title = frontmatter.title; // Correctly access title from frontmatter
+const { headings, frontmatter, title: directTitle } = Astro.props;
+
+// This is the key change: Detect if the page is from Markdown based on `frontmatter`
+const isMarkdownPage = !!frontmatter;
+
+// Determine title based on page type
+const title = isMarkdownPage ? frontmatter.title : directTitle || 'Solar Nusantara';
 const hasHeadings = headings && headings.length > 0;
 ---
 
@@ -34,7 +39,6 @@ const hasHeadings = headings && headings.length > 0;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 
-		<!-- Google Fonts - non-render-blocking -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
@@ -46,51 +50,51 @@ const hasHeadings = headings && headings.length > 0;
 		<Header />
 		<Navbar />
 		<MobileHeader />
-		<main>
-			<div class="container mx-auto px-4 py-16">
-        {hasHeadings ? (
-          <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
-            
-            {/* Table of Contents Sidebar */}
-            <aside class="w-full lg:w-1/4 lg:sticky lg:top-24 self-start">
-              <nav id="toc-nav" class="border-l-2 border-gray-200 pl-4">
-                <h2 class="font-bold text-lg mb-4 text-gray-800">Di Halaman ini</h2>
-                <ul class="space-y-2">
-                  {headings.filter(h => h.depth === 2 || h.depth === 3).map(heading => (
-                    <li>
-                      <a 
-                        href={`#${heading.slug}`} 
-                        data-slug={heading.slug}
-                        class:list={[
-                          "toc-link text-gray-500 hover:text-blue-600 transition-colors duration-200",
-                          { 'pl-4': heading.depth === 3 }
-                        ]}
-                      >
-                        {heading.text}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </aside>
-
-            {/* Main Content */}
-            <div class="flex-1 w-full lg:w-3/4">
-              <article class="prose lg:prose-xl mx-auto">
-                <h1>{title}</h1>
-                <slot />
-              </article>
+		
+    {isMarkdownPage ? (
+      // Smart Layout for .md pages
+      <main>
+        <div class="container mx-auto px-4 py-16">
+          {hasHeadings ? (
+            // With Table of Contents
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+              <aside class="w-full lg:w-1/4 lg:sticky lg:top-24 self-start">
+                <nav id="toc-nav" class="border-l-2 border-gray-200 pl-4">
+                  <h2 class="font-bold text-lg mb-4 text-gray-800">Di Halaman ini</h2>
+                  <ul class="space-y-2">
+                    {headings.filter(h => h.depth === 2 || h.depth === 3).map(heading => (
+                      <li>
+                        <a href={`#${heading.slug}`} data-slug={heading.slug} class:list={["toc-link text-gray-500 hover:text-blue-600 transition-colors duration-200", { 'pl-4': heading.depth === 3 }]}>
+                          {heading.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </aside>
+              <div class="flex-1 w-full lg:w-3/4">
+                <article class="prose lg:prose-xl mx-auto">
+                  <h1>{title}</h1>
+                  <slot />
+                </article>
+              </div>
             </div>
+          ) : (
+            // Without Table of Contents
+            <article class="prose lg:prose-xl mx-auto">
+              <h1>{title}</h1>
+              <slot />
+            </article>
+          )}
+        </div>
+      </main>
+    ) : (
+      // Simple Layout for .astro pages
+      <main>
+        <slot />
+      </main>
+    )}
 
-          </div>
-        ) : (
-          <article class="prose lg:prose-xl mx-auto">
-            <h1>{title}</h1>
-            <slot />
-          </article>
-        )}
-			</div>
-		</main>
 		<Footer />
 
     {hasHeadings && (
@@ -98,9 +102,7 @@ const hasHeadings = headings && headings.length > 0;
         document.addEventListener('DOMContentLoaded', () => {
           const tocLinks = document.querySelectorAll('.toc-link');
           const headings = Array.from(document.querySelectorAll('h2, h3'));
-
           if (!tocLinks.length || !headings.length) return;
-
           const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
               const slug = entry.target.id;
@@ -110,11 +112,7 @@ const hasHeadings = headings && headings.length > 0;
                 tocLink?.classList.add('is-active');
               }
             });
-          }, {
-            rootMargin: '-50% 0px -50% 0px', // More centered trigger
-            threshold: 0
-          });
-
+          }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
           headings.forEach(heading => observer.observe(heading));
         });
       </script>
