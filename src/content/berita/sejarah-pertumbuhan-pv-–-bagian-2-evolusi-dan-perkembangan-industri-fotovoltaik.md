@@ -1,0 +1,51 @@
+---
+title: "Sejarah Pertumbuhan PV – Bagian 2: Evolusi dan Perkembangan Industri Fotovoltaik"
+pubDate: "2024-8-19"
+description: ""
+heroImage: "./image3.png"
+---
+## Pendahuluan
+
+Setelah penemuan efek fotovoltaik pada abad ke-19, teknologi ini mulai berkembang pesat, terutama sejak pertengahan abad ke-20. Pada bagian pertama dari artikel ini, kita telah membahas tentang bagaimana efek fotovoltaik ditemukan dan bagaimana hal itu membuka jalan bagi pengembangan teknologi sel surya. Bagian kedua dari artikel ini akan mengeksplorasi bagaimana teknologi fotovoltaik (PV) tumbuh dari penggunaan terbatas menjadi salah satu sumber energi utama di dunia. Kita akan melihat bagaimana kemajuan dalam produksi, penurunan biaya, dan adopsi global telah mengubah PV menjadi pemain utama dalam sektor energi global saat ini.
+
+## Perkembangan Industri Fotovoltaik
+
+Pada tahun 1980-an, sel surya kecil dengan daya rendah mulai digunakan dalam kalkulator dan jam tangan. Pembangunan ladang surya untuk utilitas besar juga mulai muncul. Harga terus menurun seiring peningkatan produksi di Amerika Serikat. California memimpin, diikuti oleh Jerman dan Jepang yang juga memimpin adopsi fotovoltaik skala besar sejak tahun 1990-an. Program nasional dan LSM seringkali memberikan insentif untuk instalasi fotovoltaik ini, yang membuatnya lebih terjangkau. Peningkatan pasokan bahan baku, seperti silikon, pada pertengahan 2000-an, telah menyebabkan penurunan tajam dalam biaya manufaktur dari awal 2000-an hingga saat ini.
+
+Saat ini, industri memperkirakan sekitar 300 gigawatt panel fotovoltaik terpasang pada awal tahun 2017. Menggunakan jumlah rata-rata sinar matahari dan angka efisiensi eksternal, ini menghasilkan sekitar 400 terawatt jam listrik surya per tahun. Secara global, kita menggunakan sekitar 21.000 terawatt jam energi listrik, jadi ini hanya sekitar 2% dari total produksi dan penggunaan listrik.
+
+China, Jepang, dan Amerika Serikat saat ini adalah pemimpin pasar dalam instalasi fotovoltaik. Jerman, yang telah menjadi pemimpin dalam instalasi, mulai kehilangan posisinya karena mereka telah mendekati kapasitas maksimum serta terbatasnya keterjangkauan ekonomi. Fotovoltaik surya telah mendekati sekitar 10% dari total penggunaan listrik di setidaknya tiga negara, yaitu Honduras, Italia, dan Yunani. Ini jauh lebih tinggi daripada penggunaan listrik surya global, tetapi negara-negara ini juga memiliki populasi yang jauh lebih kecil dibandingkan dengan negara-negara seperti Amerika Serikat, China, dan Jepang.
+
+Melihat beberapa negara secara individu, kita melihat bahwa China adalah pemimpin baru dalam kapasitas fotovoltaik. Pada tahun 2015, sekitar 45 gigawatt terpasang, dan pada tahun 2016, tambahan 34,5 gigawatt dipasang, hampir menggandakan total instalasi fotovoltaik surya mereka hanya dalam satu tahun. Jepang juga menambahkan banyak instalasi ke basis yang sudah ada dalam satu tahun. Namun, Jerman tidak menambahkan banyak, karena mereka sudah lebih maju dalam kurva dan memulai instalasi besar sejak 20 tahun lalu. Jadi, secara keseluruhan, China menyumbang hampir 50% dari total kapasitas global baru pada tahun 2016. Ini sangat mengesankan.
+
+Pertumbuhan tahunan fotovoltaik juga tumbuh secara eksponensial dari tahun ke tahun sejak 2006, ketika kita memiliki kurang dari 10 gigawatt, dan sekarang lebih dari 300 gigawatt. Solar dianggap sebagai industri yang sedang berkembang saat ini. Meskipun ada resesi global pada tahun 2009 hingga 2011, solar tetap meningkat baik dalam hal instalasi maupun kapasitas tahun demi tahun. Selain itu, ketika kebanyakan perusahaan kehilangan karyawan, solar justru meningkatkan jumlah pekerja, dan total instalasi meningkat lebih dari 20% per tahun.
+
+Dari perspektif nasional, jika kita melihat Amerika Serikat saja, kapasitas terus meningkat setiap kuartal. Ada perubahan signifikan pada kuartal keempat setiap tahunnya, dengan pertumbuhan terbesar terjadi di sektor utilitas. Ini adalah apa yang kita sebut sebagai ladang surya, instalasi berbasis utilitas untuk pembangkit energi terpusat yang besar. Pertumbuhan menurut negara bagian terus menunjukkan bahwa California menjadi nomor satu tahun demi tahun, sementara negara bagian lain mulai bergerak di peta. Misalnya, undang-undang dan metrik keuangan lainnya dapat menyebabkan pertumbuhan, dan negara bagian dapat dengan cepat melompat ke posisi yang lebih tinggi. Sebagai contoh, Minnesota, yang berada di posisi ke-28 pada tahun 2015, kemudian naik ke posisi ke-14 dan sekarang berada di posisi ke-4 pada kuartal pertama tahun 2017.
+
+Jadi, apa saja pendorong pertumbuhan ini? Ada beberapa alasan mengapa individu, serta negara-negara, akan meningkatkan penggunaan fotovoltaik mereka. Salah satunya adalah kebutuhan yang meningkat, dengan sumber energi tradisional yang terbatas. Salah satu pendorong utama peningkatan di China adalah kebutuhan mereka akan energi, tetapi ketidakmampuan untuk terus menggunakan bahan bakar fosil karena terbatasnya sumber daya tersebut. Selain itu, ada kemampuan untuk menempatkan sumber daya fotovoltaik ini di daerah-daerah terpencil yang belum tentu terhubung dengan utilitas jaringan. Jadi, elektrifikasi pedesaan, terutama di negara berkembang dan negara dunia ketiga, cenderung mendorong penggunaan tenaga surya dibandingkan dengan bahan bakar tradisional.
+
+Negara-negara seperti Amerika Serikat, yang memulai dengan minyak, batu bara, dan gas, sekarang beralih ke energi surya. Jadi, banyak daerah pedesaan dan berkembang yang tidak pernah memiliki listrik, daripada mengikuti jalur yang sama, memulai dengan energi surya daripada memasang pembangkit bahan bakar fosil yang besar dan terpusat. Solar juga telah menjadi kompetitif biaya dengan sumber energi tradisional, yang berarti bahwa biaya yang disetarakan lebih rendah, sehingga fotovoltaik sekarang setara, atau dikenal dengan istilah grid parity, dibandingkan dengan bahan bakar fosil. Saat ini, ada lebih dari 30 negara di seluruh dunia di mana teknologi fotovoltaik sudah lebih murah daripada teknologi listrik tradisional, dan dapat menguntungkan tanpa dukungan insentif keuangan tambahan.
+
+Negara-negara ini cenderung merupakan negara di mana produksi listrik tradisional sangat mahal karena bahan bakar atau distribusinya. Selain itu, ada peningkatan kesadaran akan emisi karbon dioksida saat ini. Jadi, dari perspektif kesehatan global serta perspektif lingkungan, orang semakin sadar akan emisi CO2 dan emisi kabut asap yang terkait dengan pembakaran bahan bakar fosil. Pengetahuan dan kesadaran akan perubahan iklim juga menjadi salah satu pendorong peningkatan fotovoltaik.
+
+Dengan mempertimbangkan biaya yang disetarakan ini, kita dapat melihat biaya tanpa subsidi dari instalasi dan operasi teknologi pembangkit listrik. Angka biaya yang disetarakan ini berasal dari Lazard Group, dan jika kita fokus pada sistem skala utilitas surya fotovoltaik kristal dan film tipis, biaya yang disetarakan lebih rendah daripada hampir semua teknologi listrik konvensional. Biaya yang disetarakan ini mempertimbangkan biaya perawatan dan operasi, serta biaya bahan bakar dan teknologi. Sumber energi konvensional, seperti gas alam, batu bara, dan nuklir, memiliki biaya operasi dan perawatan yang signifikan, serta biaya bahan bakar. Ketika kita membahas fotovoltaik, bahan bakarnya gratis karena berasal dari sinar matahari, sehingga tidak ada biaya di sana, dan biaya operasi atau perawatan juga terbatas. Meskipun instalasi fotovoltaik mungkin memiliki biaya pemasangan yang lebih tinggi per unit energi, jika kita melihat pada masa pakai teknologi ini, fotovoltaik menjadi pemenang yang jelas, seperti halnya beberapa teknologi lain yang berbasis energi terbarukan, seperti angin darat, yang menjadi pesaing kuat di posisi kedua.
+
+## Kesimpulan
+
+Industri fotovoltaik telah berkembang pesat dari tahun ke tahun, dengan peningkatan instalasi yang eksponensial dan penurunan biaya yang signifikan. Peralihan dari energi fosil menuju energi terbarukan seperti fotovoltaik tidak hanya didorong oleh kebutuhan energi yang meningkat, tetapi juga oleh kesadaran akan dampak lingkungan dari penggunaan bahan bakar fosil. Dengan terus berkembangnya teknologi dan penurunan biaya, fotovoltaik telah mencapai grid parity di banyak negara, membuatnya menjadi pilihan energi yang semakin menarik dan berkelanjutan untuk masa depan. Pertumbuhan ini tidak menunjukkan tanda-tanda melambat, menjadikan fotovoltaik sebagai salah satu pilar utama dalam transition to renewable energy globally.
+
+## Referensi
+
+Abrams, Neal. “Historical Growth of Photovoltaics.” Solar Energy Basics. Coursera. <https://www.coursera.org/learn/solar-energy-basics/lecture/WZ5gC/historical-growth-of-photovoltaics>
+
+Solar PV Capacity and Additions, Top 10 Countries, 2016 – by REN21, 2017, Renewables 2017 Global Status Report, (Paris: REN21 Secretariat)
+
+Solar PV global capacity and annual aditions, 2016-2016 – by REN21, 2017, Renewables 2017 Global Status Report (Paris: REN21 Secretariat)
+
+### Penulis
+
+Mochammad Farros Fatchur Roji
+
+### Desainer
+
+Felix Tanoto

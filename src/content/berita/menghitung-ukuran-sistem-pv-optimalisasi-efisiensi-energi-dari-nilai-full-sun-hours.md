@@ -1,7 +1,7 @@
 ---
-title: "Program PINTAR dari SonusID: Solusi Revolusioner untuk Distribusi Energi"
+title: "Menghitung Ukuran Sistem PV: Optimalisasi Efisiensi Energi dari Nilai “Full Sun Hours"
 pubDate: "2024-8-14"
-description: "Menghitung Ukuran Sistem PV: Optimalisasi Efisiensi Energi dari Nilai “Full Sun Hours"
+description: ""
 heroImage: "./image.png"
 ---
 
@@ -34,7 +34,8 @@ Sebagai rangkuman, Anda sekarang harus dapat mendefinisikan perbedaan antara mem
 
 Dalam penghitungan ini, kita telah menunjukkan langkah-langkah penting dalam menentukan ukuran sistem PV yang optimal berdasarkan nilai “Full Sun Hours”. Dengan memulai dari kebutuhan listrik tahunan, kemudian membaginya dengan jumlah jam matahari penuh yang tersedia serta efisiensi sistem, kita bisa menentukan daya sistem fotovoltaik yang diperlukan. Selanjutnya, daya sistem ini digunakan untuk menentukan jumlah modul fotovoltaik yang dibutuhkan. Melalui pendekatan ini, kita dapat mencapai efisiensi energi yang optimal sesuai dengan kebutuhan spesifik lokasi dan beban listrik yang harus dipenuhi.
 
-Referensi
+## Referensi
+
 Abrams, Neal. “Calculating System Size.” Solar Energy Basics. Coursera. <https://www.coursera.org/learn/solar-energy-basics/lecture/StrU3/calculating-system-size#>
 
 ### Penulis
