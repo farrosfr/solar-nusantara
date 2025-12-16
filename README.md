@@ -1,4 +1,4 @@
-# Solar Nusantara
+# Solar Nusantara Website
 
 This is a corporate website for Solar Nusantara, built with Astro.
 
@@ -124,4 +124,4 @@ A full list of routes generated from `navLinks.ts`:
   <a href="https://www.npmjs.com/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white" alt="NPM"></a>
 </p>
 
-If you want to check, visit solar-nusantara.id
+If you want to check, visit [solar-nusantara.id](https://solar-nusantara.id)
