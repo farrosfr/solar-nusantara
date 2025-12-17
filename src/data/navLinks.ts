@@ -35,6 +35,7 @@ export const navLinks: NavLink[] = [
         ]
       },
       { href: "/tentang/karir", text: "Karir" },
+      { href: "/tentang/tentang-website", text: "Tentang Website" },
     ]
   },
   { 
