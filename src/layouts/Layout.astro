@@ -97,23 +97,86 @@ const hasHeadings = headings && headings.length > 0;
 
 		<Footer />
 
+    {isMarkdownPage && hasHeadings && (
+      <>
+        {/* Mobile TOC Panel */}
+        <aside id="mobile-toc" class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white shadow-xl transform transition-transform duration-300 ease-in-out translate-x-full z-50 lg:hidden">
+          <div class="p-4 flex justify-between items-center border-b">
+            <h2 class="font-bold text-lg text-gray-800">Di Halaman ini</h2>
+            <button id="close-mobile-toc" aria-label="Close table of contents" class="p-2 -mr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+          </div>
+          <nav class="p-4">
+            <ul class="space-y-2">
+              {headings.filter(h => h.depth === 2 || h.depth === 3).map(heading => (
+                <li>
+                  <a href={`#${heading.slug}`} class="mobile-toc-link block py-2 text-gray-600 hover:text-blue-600" class:list={{ 'pl-4': heading.depth === 3 }}>
+                    {heading.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </aside>
+
+        {/* Overlay */}
+        <div id="mobile-toc-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden lg:hidden"></div>
+
+        {/* Floating Action Button (FAB) */}
+        <button id="open-mobile-toc" aria-label="Open table of contents" class="fixed bottom-4 right-3 lg:hidden w-14 h-14 bg-[#1583c7] text-gray-800 rounded-full shadow-lg flex items-center justify-center z-40 active:scale-95 transition-transform hover:bg-[#e0b633]">
+      <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 6.00067L21 6.00139M8 12.0007L21 12.0015M8 18.0007L21 18.0015M3.5 6H3.51M3.5 12H3.51M3.5 18H3.51M4 6C4 6.27614 3.77614 6.5 3.5 6.5C3.22386 6.5 3 6.27614 3 6C3 5.72386 3.22386 5.5 3.5 5.5C3.77614 5.5 4 5.72386 4 6ZM4 12C4 12.2761 3.77614 12.5 3.5 12.5C3.22386 12.5 3 12.2761 3 12C3 11.7239 3.22386 11.5 3.5 11.5C3.77614 11.5 4 11.7239 4 12ZM4 18C4 18.2761 3.77614 18.5 3.5 18.5C3.22386 18.5 3 18.2761 3 18C3 17.7239 3.22386 17.5 3.5 17.5C3.77614 17.5 4 17.7239 4 18Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </>
+    )}
+
     {hasHeadings && (
       <script>
         document.addEventListener('DOMContentLoaded', () => {
+          // Desktop TOC scroll-spy
           const tocLinks = document.querySelectorAll('.toc-link');
           const headings = Array.from(document.querySelectorAll('h2, h3'));
-          if (!tocLinks.length || !headings.length) return;
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              const slug = entry.target.id;
-              const tocLink = document.querySelector(`.toc-link[data-slug="${slug}"]`);
-              if (entry.isIntersecting) {
-                tocLinks.forEach(link => link.classList.remove('is-active'));
-                tocLink?.classList.add('is-active');
-              }
-            });
-          }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
-          headings.forEach(heading => observer.observe(heading));
+          if (tocLinks.length > 0 && headings.length > 0) {
+            const observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                const slug = entry.target.id;
+                const tocLink = document.querySelector(`.toc-link[data-slug="${slug}"]`);
+                if (entry.isIntersecting) {
+                  tocLinks.forEach(link => link.classList.remove('is-active'));
+                  tocLink?.classList.add('is-active');
+                }
+              });
+            }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
+            headings.forEach(heading => observer.observe(heading));
+          }
+
+          // Mobile TOC functionality
+          const openTocBtn = document.getElementById('open-mobile-toc');
+          const closeTocBtn = document.getElementById('close-mobile-toc');
+          const mobileTocPanel = document.getElementById('mobile-toc');
+          const mobileTocOverlay = document.getElementById('mobile-toc-overlay');
+          const mobileTocLinks = document.querySelectorAll('.mobile-toc-link');
+
+          if (openTocBtn && mobileTocPanel && mobileTocOverlay && closeTocBtn) {
+              const openMenu = () => {
+                  mobileTocPanel.classList.remove('translate-x-full');
+                  mobileTocOverlay.classList.remove('hidden');
+                  document.body.classList.add('overflow-hidden', 'lg:overflow-auto');
+              };
+
+              const closeMenu = () => {
+                  mobileTocPanel.classList.add('translate-x-full');
+                  mobileTocOverlay.classList.add('hidden');
+                  document.body.classList.remove('overflow-hidden', 'lg:overflow-auto');
+              };
+
+              openTocBtn.addEventListener('click', openMenu);
+              closeTocBtn.addEventListener('click', closeMenu);
+              mobileTocOverlay.addEventListener('click', closeMenu);
+              mobileTocLinks.forEach(link => {
+                  link.addEventListener('click', closeMenu);
+              });
+          }
         });
       </script>
     )}
