@@ -3,6 +3,8 @@ title: "Ragam Pekerjaan dan Peta Stakeholders di Sektor PV | Bagian 2"
 pubDate: "2024-9-24"
 description: "Peran Integrator, Pemasang, Regulator & Asosiasi Industri PV"
 heroImage: "./image7.png"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 ## Pendahuluan
 
@@ -69,11 +71,3 @@ Namun, jika Anda hanya membutuhkan material atau komponen untuk proyek energi su
 ## Referensi
 
 Abrams, Neal. “Jobs and stakeholders in PV.” Solar Energy Basics. Coursera. <https://www.coursera.org/learn/solar-energy-basics/lecture/hWKpI/jobs-and-stakeholders-in-pv>
-
-### Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)
-
-### Desainer
-
-Felix Tanoto

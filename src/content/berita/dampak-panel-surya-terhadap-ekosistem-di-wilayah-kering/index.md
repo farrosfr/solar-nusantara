@@ -3,6 +3,8 @@ title: "Dampak Panel Surya terhadap Ekosistem di Wilayah Kering"
 pubDate: "2025-12-17"
 description: "Energi surya tidak hanya mendukung transisi energi, tetapi juga membuka peluang restorasi ekosistem di wilayah kering."
 heroImage: "./image.jpg"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 Selama ini, panel surya dikenal sebagai solusi energi bersih untuk mengurangi emisi karbon. Namun, riset terbaru menunjukkan bahwa dampak pembangkit listrik tenaga surya bisa melampaui produksi energi, terutama ketika dibangun di wilayah kering seperti gurun.
 
@@ -35,7 +37,3 @@ Ke depan, pengembangan energi surya berpotensi menjadi solusi ganda: menyediakan
 ## Referensi
 
 [Futura Sciences](https://www.futura-sciences.com/en/they-thought-they-were-just-producing-energy-but-the-solar-panels-awakened-the-desert_22223/) – artikel yang membahas penelitian dampak pembangkit listrik tenaga surya terhadap ekosistem gurun di China.
-
-### Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)

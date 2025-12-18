@@ -3,6 +3,8 @@ title: "Ragam Pekerjaan dan Peta Stakeholders di Sektor PV | Bagian 1"
 pubDate: "2024-9-23"
 description: "Peran Penelitian, Organisasi Standar, & Produsen"
 heroImage: "./image6.png"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 ## Pendahuluan
 
@@ -52,10 +54,3 @@ Badan Standardisasi Nasional (BSN). (2021). Standar Nasional Indonesia (SNI) unt
 
 ementerian Energi dan Sumber Daya Mineral (ESDM). (2023). Laporan Tahunan Energi Baru Terbarukan dan Konservasi Energi (EBTKE). Jakarta: Direktorat Jenderal Ketenagalistrikan. ebtke.esdm.go.id
 
-## Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)
-
-## Desainer
-
-Felix Tanoto

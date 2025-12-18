@@ -3,6 +3,8 @@ title: "Pertumbuhan Fotovoltaik: Analisis Potensi Berdasarkan Data Global dan Tr
 pubDate: "2024-8-19"
 description: ""
 heroImage: "./image4.png"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 ## Pendahuluan
 
@@ -35,11 +37,3 @@ Abrams, Neal. “Growth Potential of Photovoltaics.” Solar Energy Basics. Cour
 Map – Countries with Renewable Power policies by type, 2016 – From REN21, 2017. “Renewables 2017 Global Status Report” (Paris: REN21 Secretariat)
 
 Additional graphs created by Abby Webster
-
-### Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)
-
-### Desainer
-
-Felix Tanoto

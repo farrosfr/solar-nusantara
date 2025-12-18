@@ -3,6 +3,8 @@ title: "Sejarah Pertumbuhan PV – Bagian 2: Evolusi dan Perkembangan Industri F
 pubDate: "2024-8-19"
 description: ""
 heroImage: "./image3.png"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 ## Pendahuluan
 
@@ -41,11 +43,3 @@ Abrams, Neal. “Historical Growth of Photovoltaics.” Solar Energy Basics. Cou
 Solar PV Capacity and Additions, Top 10 Countries, 2016 – by REN21, 2017, Renewables 2017 Global Status Report, (Paris: REN21 Secretariat)
 
 Solar PV global capacity and annual aditions, 2016-2016 – by REN21, 2017, Renewables 2017 Global Status Report (Paris: REN21 Secretariat)
-
-### Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)
-
-### Desainer
-
-Felix Tanoto

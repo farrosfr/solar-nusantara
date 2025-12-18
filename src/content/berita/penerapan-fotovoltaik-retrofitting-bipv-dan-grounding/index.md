@@ -3,6 +3,8 @@ title: "Penerapan Fotovoltaik: Retrofitting, BIPV, dan Grounding"
 pubDate: "2024-8-21"
 description: ""
 heroImage: "./image5.png"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 ## Pendahuluan
 
@@ -31,11 +33,3 @@ Setelah mempelajari berbagai aplikasi dan integrasi fotovoltaik, Anda kini memil
 ## Referensi
 
 Abrams, Neal. “Applications of PV.” Solar Energy Basics. Coursera. <https://www.coursera.org/learn/solar-energy-basics/lecture/3addu/applications-of-pv>
-
-### Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)
-
-### esainer
-
-Felix Tanoto

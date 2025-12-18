@@ -2,7 +2,9 @@
 title: "Menghitung Ukuran Sistem PV: Optimalisasi Efisiensi Energi dari Nilai “Full Sun Hours"
 pubDate: "2024-8-14"
 description: ""
-heroImage: "./image.png"
+heroImage: "./image1.png"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 
 ## Pendahuluan
@@ -37,11 +39,3 @@ Dalam penghitungan ini, kita telah menunjukkan langkah-langkah penting dalam men
 ## Referensi
 
 Abrams, Neal. “Calculating System Size.” Solar Energy Basics. Coursera. <https://www.coursera.org/learn/solar-energy-basics/lecture/StrU3/calculating-system-size#>
-
-### Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)
-
-### Desainer
-
-Felix Tanoto

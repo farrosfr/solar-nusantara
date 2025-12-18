@@ -15,17 +15,43 @@ type Props = Awaited<ReturnType<typeof getStaticPaths>>[number]['props'];
 const post = Astro.props;
 const { Content, headings } = await post.render();
 
+// Calculate reading time
+const wordsPerMinute = 200;
+const wordCount = post.body.split(/\s+/g).length;
+const readingTime = Math.ceil(wordCount / wordsPerMinute);
+
 // Pass frontmatter and headings to the main layout so it can render the TOC
 const frontmatter = {
   title: post.data.title,
+  description: post.data.description,
+  heroImage: post.data.heroImage,
+  author: post.data.author,
+  authorUrl: post.data.authorUrl,
 };
 ---
 
 <Layout frontmatter={frontmatter} headings={headings}>
 
-  <p class="text-lg text-gray-500 -mt-8 mb-8">
-    Dipublikasikan pada: {post.data.pubDate.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}
-  </p>
+  <div class="text-lg text-gray-500 -mt-8 mb-8 flex items-center space-x-2">
+    <span>{post.data.pubDate.toLocaleDateString('id-ID', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+    {post.data.author && (
+      <>
+        <span class="text-gray-400">•</span>
+        {post.data.authorUrl ? (
+          <>
+            <span>Oleh </span>
+            <a href={post.data.authorUrl} target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-blue-600 hover:underline transition-colors">
+              {post.data.author}
+            </a>
+          </>
+        ) : (
+          <span>Oleh {post.data.author}</span>
+        )}
+      </>
+    )}
+    <span class="text-gray-400">•</span>
+    <span>{readingTime} menit baca</span>
+  </div>
 
   {post.data.heroImage && (
     <div class="mb-12 not-prose -mx-4 sm:-mx-8 md:-mx-16 lg:mx-0">

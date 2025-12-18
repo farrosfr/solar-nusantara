@@ -3,6 +3,8 @@ title: "Ragam Pekerjaan dan Peta Stakeholders di Sektor PV | Bagian 3"
 pubDate: "2024-9-25"
 description: "Pelatihan, Perusahaan Utilitas, dan Kebutuhan Tenaga Kerja"
 heroImage: "./image8.png"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 ## Pendahuluan
 
@@ -101,11 +103,3 @@ Namun, jika Anda hanya membutuhkan material atau komponen untuk proyek energi su
 The Solar Foundation. (2017). National Solar Jobs Census 2016. The Solar Foundation. Retrieved from <https://www.thesolarfoundation.org/national/>
 
 Abrams, Neal. “Jobs and stakeholders in PV.” Solar Energy Basics. Coursera. <https://www.coursera.org/learn/solar-energy-basics/lecture/hWKpI/jobs-and-stakeholders-in-pv>
-
-### Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)
-
-### Desainer
-
-Felix Tanoto

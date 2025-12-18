@@ -3,6 +3,8 @@ title: "Sejarah Pertumbuhan PV – Bagian 1: Penemuan Efek Fotovoltaik"
 pubDate: "2024-8-15"
 description: ""
 heroImage: "./image2.png"
+author: "FarrosFR"
+authorUrl: "https://farrosfr.com"
 ---
 ## Pendahuluan
 
@@ -39,11 +41,3 @@ Bell Laboratory Physicists – By Tullo Saba [public domain], via flickr
 Sun over Earth/solar panel on the ISS – by the NASA Goddard Spaceflight Center [CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/deed.en)], via Flickr
 
 Vanguard 1 – by NASA [public domain], via Wikimedia Commons
-
-### Penulis
-
-[Mochammad Farros Fatchur Roji](farrosfr.com)
-
-### Desainer
-
-Felix Tanoto

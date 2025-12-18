@@ -5,6 +5,8 @@ const beritaCollection = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
+    author: z.string().optional(),
+    authorUrl: z.string().url().optional(),
     // Transform string to Date object
     pubDate: z.coerce.date(),
     heroImage: image().optional(),
